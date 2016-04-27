@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 body {
   font-size: 16px;
   line-height: 22px;
@@ -17,4 +19,210 @@ h2 {
   font-size: 60px;
   line-height: 60.35px;
   color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 900px;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+  background-color: beige;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gs-btn {
+  padding: 22px 14px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
+  background: linear-gradient(to top, #e74a35, #f26843);
+}
+
+/*HEADER*/
+
+.gs-mainheader {
+  background-color: bisque;
+}
+
+.gs-logo {
+  float: left;
+  width: 154px;
+  margin-right: 30px;
+}
+
+.gs-mainmenu {
+  float: left;
+}
+
+.gs-mainmenu ul {
+  padding: 0;
+}
+
+.gs-mainmenu-item {
+  display: inline-block;
+}
+
+.gs-userblock {
+  float: right;
+}
+
+/*MAIN*/
+
+.gs-slider {
+  text-align: center;
+}
+
+.gs-banner {
+  background-color: chocolate;
+}
+
+.gs-banner-item {
+  float: left;
+  width: 44.4%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 24px;
+  padding-right: 21px;
+}
+
+.gs-banner-item h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.gs-banner-item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-right: 50px;
+}
+
+.gs-banner-cta {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.gs-banner-item:first-child {
+  margin-right: 2.2%;
+  background: url("../img/tmp/banner1.png") no-repeat;
+}
+
+.gs-banner-item:last-child {
+  background: url("../img/tmp/banner2.png") no-repeat;
+}
+
+.gs-products {
+  font-size: 0;
+}
+
+.gs-products-item {
+  display: inline-block;
+  width: 22.2%;
+  margin-right: 2.2%;
+}
+
+.gs-products-item:last-child {
+  margin-right: 0;
+}
+
+.gs-products-item figure {
+  position: relative;
+  margin: 0;
+}
+
+.gs-products-item-price {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.gs-products-item-title {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.gs-info {
+  padding-top: 30px;
+  padding-left: 20px;
+  background: url("../img/info-bg.jpg");
+  border-radius: 15px;
+}
+
+.gs-info h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 290px;
+}
+
+.gs-info-item {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  font-size: 0;
+  margin-right: 2.2%;
+}
+
+.gs-info-item p {
+  font-size: 16px;
+}
+
+.gs-marketing {
+  width: 100%;
+  background-color: aliceblue;
+  z-index: 100;
+}
+
+.gs-blog-lastitem {
+  float: left;
+  width: 420px;
+  margin-right: 2.2%;
+}
+
+.gs-subscribe {
+  float: left;
+  width: 420px;
+}
+
+.gs-subscribe p {
+  margin: 0;
+}
+
+/*FOOTER*/
+
+.gs-footer-socials {
+  float: left;
+  width: 22.2%;
+  margin-right: 2.2%;
+}
+
+.gs-footermenu {
+  float: left;
+  width: 44.4%;
+  margin-right: 2.2%;
+}
+
+.gs-footermenu li {
+  display: inline-block;
+}
+
+.gs-author {
+  float: right;
+  width: 22.2%;
 }
