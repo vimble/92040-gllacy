@@ -8,13 +8,14 @@
   </head>
   <body>
   <header class="gs-mainheader">
-    <div class="container">
+    <div class="container clearfix">
       <div class="gs-logo">
-        <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a> 
+        <img src="img/logo.png" width="154" height="64" alt="GllacyShop">
       </div>
       <nav class="gs-mainmenu">
         <ul>
-          <li class="gs-mainmenu-item active"><a href="#">Каталог</a>
+          <li class="gs-mainmenu-item"><a href="#">Каталог</a>
+<!--
             <ul class="gs-submenu">
               <li class="gs-submenu-item"><a href="#">Новинки</a></li>
               <li class="gs-submenu-item"><a href="#">Сливочное</a></li>
@@ -22,6 +23,7 @@
               <li class="gs-submenu-item"><a href="#">Фруктовый лед</a></li>
               <li class="gs-submenu-item"><a href="#">Мелорин</a></li>
             </ul>
+-->
           </li>
           <li class="gs-mainmenu-item"><a href="#">Доставка и оплата</a></li>
           <li class="gs-mainmenu-item"><a href="#">О компании</a></li>
@@ -33,10 +35,11 @@
           <a class="gs-login" href="#">Вход</a>
           <a class="gs-small-cart" href="#">Пусто</a>  
         </div>
-        <div class="gs-header-phone">
-          <p>С 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
+        <div class="gs-header-contacts">
+          <span class="gs-header-hours">С 10 до 20, ежедневно</span>
+          <span class="gs-header-phone">8 812 450-25-25</span>
         </div>
+<!--
         <div class="gs-search-form">
           <input type="text" name="search" id="search" placeholder="Что ищем?">
         </div>
@@ -49,77 +52,66 @@
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </div>
-        <div class="gs-small-cart-popup">
-          <ul>
-            <li>
-              <a class="gs-small-cart-delete" href="#">X</a>
-              <a href="#"><img class="gs-small-cart-img" src="img/tmp/1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a>
-              <a class="gs-small-cart-name" href="#">Пломбир с апельсиновым джемом</a>
-              <span>1,5 кг х</span>
-              <span>200 руб.</span>
-              <span>300 руб.</span>
-            </li>
-            <li>
-              <a class="gs-small-cart-delete" href="#">X</a>
-              <a href="#"><img class="gs-small-cart-img" src="img/tmp/3-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></a>
-              <a class="gs-small-cart-name" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-              <span>1,5 кг х</span>
-              <span>300 руб.</span>
-              <span>450 руб.</span>
-            </li>
-          </ul>
-          <span>Итого: 750 руб.</span>
-          <a class="gs-btn" href="#">Оформить заказ</a>
-        </div>  
+-->
       </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container clearfix">
     <div class="gs-breadcrumbs">
       <ul>
         <li class="gs-breadcrumbs-item"><a href="index.html">Главная</a></li>
-        <li class="gs-breadcrumbs-item"><a href="#">Каталог</a></li>
+        <li class="gs-breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
         <li class="gs-breadcrumbs-item"><a href="#">Сливочное</a></li>
       </ul>
     </div>
     <h1>Сливочное мороженное</h1>
-    <div class="gs-filter">
+    <div class="gs-filter clearfix">
       <form class="gs-filter-form" action="#" method="post">
       <!--ORDER SELECT-->
-        <label for="filter-sort">Сортировка:</label>
-        <select name="filter-sort" id="filter-sort">
-          <option value="popular">по популярности</option>
-          <option value="lowprice">сначала недорогие</option>
-          <option value="highprice">сначала дорогие</option>
-          <option value="fat">по жирности</option>
-        </select>
+        <div class="gs-filter-form-sort">
+          <label for="filter-sort">Сортировка:</label>
+          <select name="filter-sort" id="filter-sort">
+            <option value="popular">по популярности</option>
+            <option value="lowprice">сначала недорогие</option>
+            <option value="highprice">сначала дорогие</option>
+            <option value="fat">по жирности</option>
+          </select>
+        </div>
         <!--PRICE SLIDER-->
-        <label for="price-slider">Цена: 100 руб. &ndash; 500 руб.</label>
-        <input type="range" min="0" max="500" step="10" id="price-slider">
+        <div class="gs-filter-form-price">
+          <label for="price-slider">Цена: 100 руб. &ndash; 500 руб.</label>
+          <input type="range" min="0" max="500" step="10" id="price-slider">  
+        </div>
         <!--FATNESS RADIO-->
-        <label for="10">Жирность:</label>
-        <input type="radio" name="fatness" id="0" value="0">
-        <label for="0">0%</label>
-        <input type="radio" name="fatness" id="10" value="10" checked>
-        <label for="10">до 10%</label>
-        <input type="radio" name="fatness" id="30" value="30">
-        <label for="30">до 30%</label>
-        <input type="radio" name="fatness" id="30-more" value="30-more">
-        <label for="30-more">выше 30%</label>
+        <div class="gs-filter-form-fatness">
+          <label for="10">Жирность:</label>
+          <input type="radio" name="fatness" id="0" value="0">
+          <label for="0">0%</label>
+          <input type="radio" name="fatness" id="10" value="10" checked>
+          <label for="10">до 10%</label>
+          <input type="radio" name="fatness" id="30" value="30">
+          <label for="30">до 30%</label>
+          <input type="radio" name="fatness" id="30-more" value="30-more">
+          <label for="30-more">выше 30%</label> 
+        </div>
         <!--FILLER CHECKBOXES-->
-        <label>Наполнители:</label>
-        <input type="checkbox" id="choco" name="choco" checked>
-        <label for="choco">шоколадные</label>
-        <input type="checkbox" id="powder" name="powder" checked>
-        <label for="powder">сахарные присыпки</label>
-        <input type="checkbox" id="fruits" name="fruits">
-        <label for="fruits">фрукты</label>
-        <input type="checkbox" id="syrup" name="syrup">
-        <label for="syrup">сиропы</label>
-        <input type="checkbox" id="jam" name="jam">
-        <label for="jam">джемы</label>
+        <div class="gs-filter-form-filler">
+          <label>Наполнители:</label>
+          <input type="checkbox" id="choco" name="choco" checked>
+          <label for="choco">шоколадные</label>
+          <input type="checkbox" id="powder" name="powder" checked>
+          <label for="powder">сахарные присыпки</label>
+          <input type="checkbox" id="fruits" name="fruits">
+          <label for="fruits">фрукты</label>
+          <input type="checkbox" id="syrup" name="syrup">
+          <label for="syrup">сиропы</label>
+          <input type="checkbox" id="jam" name="jam">
+          <label for="jam">джемы</label>  
+        </div>
         <!--SUBMIT BTN-->
-        <button type="submit">Применить</button>
+        <div class="gs-filter-form-btn">
+          <button type="submit">Применить</button> 
+        </div>  
       </form>
     </div>
     <section class="gs-products">
@@ -128,84 +120,108 @@
           <a href="#"><img src="img/tmp/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
           <span>310 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
           <span>380 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
           <span>355 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
           <span>415 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/1-1.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></a>
           <span>325 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с брусничным джемом</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с брусничным джемом</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/2-1.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></a>
           <span>410 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/3-1.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></a>
           <span>375 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/4-1.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></a>
           <span>320 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с шоколадной стружкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с шоколадной стружкой</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/1-2.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></a>
           <span>440 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/2-2.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></a>
           <span>435 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочноe с ментоловым сиропом</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочноe с ментоловым сиропом</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/3-2.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></a>
           <span>355 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с кусочками черного шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с кусочками черного шоколада</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
           <a href="#"><img src="img/tmp/4-2.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></a>
           <span>420 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с мятным сиропом</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с мятным сиропом</a>
+        </div>
       </article>
     </section>
     <div class="gs-paging">
@@ -221,7 +237,7 @@
     </div>  
   </main>
   <footer class="gs-mainfooter">
-    <div class="container">
+    <div class="container clearfix">
       <div class="gs-footer-socials">
         <a class="gs-socials tw" href="#">Twitter</a>
         <a class="gs-socials ins" href="#">Instagram</a>

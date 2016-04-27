@@ -6,6 +6,7 @@ body {
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
   color: #323232;
+  background-color: #99aea2;
 }
 
 h1 {
@@ -25,10 +26,11 @@ h2 {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  min-width: 900px;
+  min-width: 880.2px;
   padding-left: 2.3%;
   padding-right: 2.3%;
-  background-color: beige;
+  box-sizing: border-box;
+  background-color: firebrick;
 }
 
 .clearfix {
@@ -56,6 +58,7 @@ h2 {
   float: left;
   width: 154px;
   margin-right: 30px;
+  padding: 10px 0;
 }
 
 .gs-mainmenu {
@@ -64,14 +67,48 @@ h2 {
 
 .gs-mainmenu ul {
   padding: 0;
+  margin: 0;
 }
 
 .gs-mainmenu-item {
   display: inline-block;
+  margin-right: 26px;
 }
 
 .gs-userblock {
+  position: relative;
   float: right;
+}
+
+.gs-search {
+  margin-right: 10px;
+}
+
+.gs-login {
+  margin-right: 10px;
+}
+
+.gs-header-contacts {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 180px;
+}
+
+.gs-header-hours {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+  color: #ffffff;
+}
+
+.gs-header-phone {
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: right;
+  color: #ffffff;
 }
 
 /*MAIN*/
@@ -81,16 +118,17 @@ h2 {
 }
 
 .gs-banner {
+  width: 100;
   background-color: chocolate;
 }
 
 .gs-banner-item {
   float: left;
-  width: 44.4%;
+  width: 46.6%;
   padding-top: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 24px;
-  padding-right: 21px;
 }
 
 .gs-banner-item h3 {
@@ -126,6 +164,8 @@ h2 {
 
 .gs-products {
   font-size: 0;
+  vertical-align: top;
+  background-color: darkviolet;
 }
 
 .gs-products-item {
@@ -143,6 +183,11 @@ h2 {
   margin: 0;
 }
 
+.gs-products-item img {
+  width: 100%;
+  height: auto;
+}
+
 .gs-products-item-price {
   position: absolute;
   left: 0;
@@ -158,29 +203,52 @@ h2 {
   text-align: center;
 }
 
+.gs-breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gs-breadcrumbs-item {
+  display: inline-block;
+}
+
 .gs-info {
   padding-top: 30px;
   padding-left: 20px;
+  margin-bottom: 40px;
   background: url("../img/info-bg.jpg");
   border-radius: 15px;
+  font-size: 0;
 }
 
 .gs-info h3 {
   font-size: 24px;
   font-weight: 500;
-  padding-right: 290px;
 }
 
 .gs-info-item {
   display: inline-block;
-  width: 400px;
-  vertical-align: top;
   font-size: 0;
+  vertical-align: top;
+  width: 46.6%;
   margin-right: 2.2%;
 }
 
+.gs-info-item img {
+  display: block;
+  float: left;
+  width: 49px;
+  margin-right: 7px;
+}
+
 .gs-info-item p {
+  float: left;
+  width: 70%;
   font-size: 16px;
+}
+
+.gs-info-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .gs-marketing {
@@ -191,17 +259,63 @@ h2 {
 
 .gs-blog-lastitem {
   float: left;
-  width: 420px;
+  width: 46.6%;
+  padding-top: 26px;
+  padding-left: 20px;
   margin-right: 2.2%;
+  background: url("../img/tmp/blog-item.jpg") no-repeat;
+  
 }
 
 .gs-subscribe {
   float: left;
-  width: 420px;
+  width: 46.6%;
+  padding-top: 34px;
+  padding-left: 21px;
+  padding-right: 27px;
+  padding-bottom: 35px; 
+  background-color: #f8f7f4;
+  border-radius: 10px;
 }
 
 .gs-subscribe p {
   margin: 0;
+}
+
+/*CATALOG*/
+
+.gs-paging ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.gs-paging li {
+  display: inline-block;
+}
+
+.gs-filter-form-sort {
+  float: left;
+  width: 22.2%;
+}
+
+.gs-filter-form-price {
+  float: left;
+  width: 25.5%;
+  margin-right: 1.1%;
+}
+
+.gs-filter-form-fatness {
+  float: left;
+  width: 46.6%;
+}
+
+.gs-filter-form-filler {
+  float: left;
+}
+
+.gs-filter-form-btn {
+  float: right;
 }
 
 /*FOOTER*/
