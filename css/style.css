@@ -1,9 +1,12 @@
+/*GENERAL*/
+
 body {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
   color: #323232;
+  background-color: #99aea2;
 }
 
 h1 {
@@ -17,4 +20,417 @@ h2 {
   font-size: 60px;
   line-height: 60.35px;
   color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 880.2px;
+  background-color: firebrick;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gs-btn {
+  padding: 22px 14px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
+  background: linear-gradient(to top, #e74a35, #f26843);
+}
+
+/*HEADER*/
+
+.gs-mainheader {
+  background-color: bisque;
+}
+
+.gs-logo {
+  float: left;
+  width: 154px;
+  margin-left: 2.3%;
+  margin-right: 30px;
+  padding: 10px 0;
+}
+
+.gs-mainmenu {
+  float: left;
+}
+
+.gs-mainmenu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.gs-mainmenu-item {
+  display: inline-block;
+  margin-right: 26px;
+}
+
+.gs-userblock {
+  position: relative;
+  float: right;
+  margin-right: 2.3%;
+}
+
+.gs-search {
+  margin-right: 10px;
+}
+
+.gs-login {
+  margin-right: 10px;
+}
+
+.gs-header-contacts {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 180px;
+}
+
+.gs-header-hours {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+  color: #ffffff;
+}
+
+.gs-header-phone {
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: right;
+  color: #ffffff;
+}
+
+/*MAIN*/
+
+.gs-slider {
+  text-align: center;
+  margin-left: 2.3%;
+  margin-right: 2.3%;
+}
+
+.gs-banner {
+  background-color: chocolate;
+}
+
+.gs-banner-item {
+  float: left;
+  width: 46.6%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.gs-banner-item h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.gs-banner-item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-right: 50px;
+}
+
+.gs-banner-cta {
+  text-align: right;
+}
+
+.gs-banner-item:first-child {
+  margin-right: 2.2%;
+  margin-left: 2.3%;
+  background: url("../img/tmp/banner1.jpg") no-repeat;
+}
+
+.gs-banner-item:last-child {
+  background: url("../img/tmp/banner2.jpg") no-repeat;
+}
+
+.gs-products {
+  font-size: 0;
+  vertical-align: top;
+  background-color: darkviolet;
+}
+
+.gs-products-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 22.2%;
+  margin-right: 2.2%;
+  margin-bottom: 42px;
+}
+
+.gs-products-item:nth-child(1),
+.gs-products-item:nth-child(5),
+.gs-products-item:nth-child(9) {
+  margin-left: 2.3%;
+}
+
+.gs-products-item:last-child {
+  margin-right: 0;
+}
+
+.gs-products-item figure {
+  position: relative;
+  margin: 0;
+}
+
+.gs-products-item img {
+  width: 100%;
+  height: auto;
+}
+
+.gs-products-item-price {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.gs-products-item-title {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.gs-breadcrumbs {
+  margin-left: 2.3%;
+}
+
+.gs-breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+}
+
+.gs-breadcrumbs-item {
+  display: inline-block;
+}
+
+.gs-info {
+  padding-top: 30px;
+  padding-left: 21px;
+  margin-left: 2.3%;
+  margin-right: 2.3%;
+  margin-bottom: 40px;
+  background: url("../img/info-bg.jpg");
+  border-radius: 15px;
+  font-size: 0;
+}
+
+.gs-info h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.gs-info-item {
+  position: relative;
+  display: inline-block;
+  width: 46.6%;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.gs-info-item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 49px;
+}
+
+.gs-info-item p {
+  display: inline-block;
+  padding-left: 56px;
+  font-size: 16px;
+}
+
+.gs-info-item:nth-of-type(odd) {
+  margin-right: 2.2%;
+}
+
+.gs-marketing {
+  width: 100%;
+  background-color: aliceblue;
+  z-index: 100;
+}
+
+.gs-blog-lastitem {
+  float: left;
+  width: 46.6%;
+  padding-top: 26px;
+  padding-left: 20px;
+  margin-left: 2.3%;
+  margin-right: 2.2%;
+  box-sizing: border-box;
+  background-color: blue;
+}
+
+.gs-subscribe {
+  float: left;
+  width: 46.6%;
+  padding-top: 34px;
+  padding-left: 21px;
+  padding-right: 27px;
+  padding-bottom: 35px; 
+  margin-right: 2.3%;
+  box-sizing: border-box;
+  background-color: cyan;
+  border-radius: 10px;
+}
+
+.gs-subscribe p {
+  margin: 0;
+  padding: 0;
+}
+
+.gs-contacts {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  background-color: cornsilk;
+}
+
+.gs-contacts-info {
+  position: absolute;
+  right: 2.3%;
+  top: 14.7%;
+  padding-top: 32px;
+  padding-left: 25px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
+}
+
+/*CATALOG*/
+
+.gs-catalog-title {
+  margin-left: 2.3%;
+  margin-right: 2.3%;
+}
+
+.gs-filter {
+  margin-left: 2.3%;
+  margin-right: 2.3%;
+  background-color: cornflowerblue;
+}
+
+.gs-filter-form-sort {
+  float: left;
+  width: 22.2%;
+  margin-right: 1.2%;
+  background-color: burlywood;
+}
+
+.gs-filter-form-sort label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.gs-filter-form-price {
+  float: left;
+  width: 25.5%;
+  margin-right: 1.1%;
+  background-color: cadetblue;
+}
+
+.gs-filter-form-price label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.gs-filter-form-fatness {
+  float: right;
+  width: 50%;
+  background-color: chartreuse;
+}
+
+.gs-filter-form-fatness label:first-child {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.gs-filter-form-filler {
+  float: left;
+  width: 78%;
+  background-color: coral;
+}
+
+.gs-filter-form-filler label:first-child {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.gs-filter-form-btn {
+  float: right;
+  width: 22%;
+  text-align: right;
+}
+
+.gs-paging {
+  background-color: coral;
+  margin-right: 2.3%;
+  margin-left: 2.3%;
+}
+
+.gs-paging ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.gs-paging li {
+  display: inline-block;
+}
+
+
+/*FOOTER*/
+
+.gs-footer-socials {
+  float: left;
+  width: 22.2%;
+  margin-left: 2.3%;
+  margin-right: 2.2%;
+}
+
+.gs-footermenu {
+  float: left;
+  width: 44.4%;
+  margin-right: 2.2%;
+}
+
+.gs-footermenu ul {
+  margin: 0;
+  font-size: 0;
+}
+
+.gs-footermenu li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  width: 175px;
+}
+
+.gs-author {
+  float: right;
+  width: 22.2%;
+  margin-right: 2.3%;
 }
