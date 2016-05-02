@@ -454,7 +454,38 @@ a {
 }
 
 .gs-slider-buttons input[type="radio"] {
+  display: none;
+}
+
+.gs-slider-buttons input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
   cursor: pointer;
+}
+
+.gs-slider-buttons input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+.gs-slider-buttons input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
 }
 
 /*BANNERS*/
