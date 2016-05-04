@@ -37,6 +37,8 @@ h2 {
   clear: both;
 }
 
+  /*GENERAL BTN STYLES*/
+
 .gs-btn {
   padding: 10px 25px;
   font-size: 18px;
@@ -48,6 +50,7 @@ h2 {
   background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
   background: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0.00px rgba(172, 16, 0, 0.64);
+  outline: 0;
   cursor: pointer;
 }
 
@@ -61,27 +64,123 @@ h2 {
   box-shadow: inset 0px 2px 2px 0px #942718;
 }
 
-a {
-  position: relative;
-  font-weight: 700;
+  /*GENERAL LINKS' STYLES*/
+
+.gs-white-link,
+.gs-black-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
   text-decoration: none;
-  color: #ffffff;
 }
 
+.gs-white-link {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255, 0.3);
+}
+
+.gs-black-link {
+  color: #323232;
+  border-bottom: 1px solid rgba(50,50,50, 0.3);
+}
+
+.gs-white-link:hover,
+.gs-white-link:active {
+  color: #ffbc9e;
+  border-bottom-color: rgba(255,188,158, 0.3);
+}
+
+.gs-black-link:hover,
+.gs-black-link:active {
+  color: #e84d37;
+  border-bottom-color: rgba(232,77,55, 0.3);
+}
+
+  /*GENERAL INPUTS' STYLES*/
+
 .gs-input {
+  position: relative;
   padding: 15px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 400;
-  color: #999999;
+  font-weight: 700;
+  line-height: 24px;
+  color: #323232;
   border-radius: 5px;
-  border: 2px solid #f3f3f2;
+  border: 1px solid rgba(178, 178, 178, 0.52);
   outline: 0;
 }
 
-/*HEADER*/
+.gs-input:hover {
+  padding: 14px;
+  border-width: 2px;
+}
 
-/*LOGO*/
+.gs-input:focus {
+  padding: 14px;
+  border-width: 2px;
+  border-color: rgba(46,136,228, 0.52);
+}
+
+.gs-input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.gs-input:-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.gs-input::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.gs-input:-ms-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.gs-input:focus::-webkit-input-placeholder {
+  position: relative;
+  left: 0;
+  top: -40px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+
+.gs-input:focus:-moz-placeholder {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+.gs-input:focus::-moz-placeholder {
+  position: relative;
+  left: 0;
+  top: -20px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+
+.gs-input:focus:-ms-input-placeholder {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+
+/*END GENERAL*/
+
+/*HEADER*/
+  /*LOGO*/
 
 .gs-logo {
   float: left;
@@ -96,63 +195,58 @@ a {
   height: 64px;
 }
 
-/*MAINMENU*/
+  /*MAINMENU*/
 
 .gs-mainmenu {
   float: left;
+  max-width: 50%;
 }
 
-.gs-mainmenu ul {
+.gs-mainmenu>ul {
   padding: 0;
+  padding-top: 22px;
   margin: 0;
   list-style: none;
-  line-height: 75px;
 }
 
-/*MAINMENU ITEM*/
+  /*MAINMENU ITEM*/
 
 .gs-mainmenu-item {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 7px 15px;
   margin-right: 11px;
   line-height: 18px;
 }
 
+.gs-mainmenu-item:hover:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 7px;
+}
+
 .gs-mainmenu-item a {
-  position: relative;
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
 }
 
-.gs-mainmenu-item a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid #ffffff;
-  opacity: 0.4;
-}
-
-/*MAINMENU ITEM HOVER*/
+  /*MAINMENU ITEM HOVER*/
 
 .gs-mainmenu-item:hover {
   background-color: #ffffff;
   border-radius: 50px;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
 }
 
 .gs-mainmenu-item:hover a {
   color: #333333;
-}
-
-.gs-mainmenu-item:hover a:after {
-  opacity: 0;
 }
 
 .gs-mainmenu-item:hover .gs-submenu {
@@ -160,26 +254,25 @@ a {
 }
 
 .gs-mainmenu-item:active {
-  box-shadow: inset 0px 0px 2px 1px #696969;
-  background-color: #ededed;
+  box-shadow: inset 0px 2px 2px 0px #696969;
 }
 
-/*MAINMENU ITEM ACTIVE*/
+  /*MAINMENU ITEM ACTIVE*/
 
 .gs-mainmenu-item.active {
   background-color: #c27a64;
   border-radius: 50px;
 }
 
-.gs-mainmenu-item.active a:after {
-  opacity: 0;
+.gs-mainmenu-item.active a {
+  border-bottom: 0;
 }
 
 .gs-mainmenu-item.active:hover a {
   color: #ffffff;
 }
 
-/*SUBMENU*/
+  /*SUBMENU*/
 
 .gs-submenu {
   position: absolute;
@@ -187,7 +280,9 @@ a {
   top: 37px;
   display: none;
   width: 143px;
-  height: 171px;
+  padding: 0;
+  padding-bottom: 7px;
+  list-style: none;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0.00px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -196,8 +291,8 @@ a {
 
 .gs-submenu li {
   line-height: 16px;
-  padding-top: 5px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 7px;
 }
 
 .gs-submenu li:hover {
@@ -225,6 +320,10 @@ a {
   padding-bottom: 17px;
 }
 
+.gs-submenu li:first-child:hover {
+  background-color: transparent;
+}
+
 .gs-submenu li:first-child:after {
   content: "";
   position: absolute;
@@ -238,19 +337,20 @@ a {
   font-weight: 700;
 }
 
-/*USERBLOCK*/
+  /*USERBLOCK*/
 
 .gs-userblock {
   position: relative;
   float: right;
+  width: 22.8%;
   padding: 20px 0;
 }
 
 .gs-top-btn {
   position: relative;
   display: inline-block;
-  font-size: 0px;
   vertical-align: top;
+  font-size: 0px;
   text-decoration: none;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -263,12 +363,22 @@ a {
   background: url("../img/sprite.png") no-repeat;
 }
 
+.gs-top-btn:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 7px;
+  background-color: transparent;
+}
+
 .gs-top-btn:not(.gs-small-cart):hover {
   background-color: #f8f7f4;
   color: #323232;
 }
 
-/*SEARCH*/
+  /*SEARCH*/
 
 .gs-search { 
   width: 33px;
@@ -290,7 +400,7 @@ a {
 
 .gs-search-form {
   position: absolute;
-  right: 240px;
+  right: 230px;
   bottom: -80px;
   display: none;
   background-color: #f8f7f4;
@@ -304,11 +414,15 @@ a {
   width: 311px;
 }
 
-.gs-search:hover .gs-search-form {
+.gs-search:hover + .gs-search-form {
   display: block;
 }
 
-/*LOGIN*/
+.gs-search-form:hover {
+  display: block;
+}
+
+  /*LOGIN*/
 
 .gs-login {
   padding-top: 6px;
@@ -354,20 +468,25 @@ a {
 }
 
 .gs-login-popup a {
-  display: block;
+  display: inline-block;
   font-size: 13px;
-  line-height: 16px;
-  color: #323232;
-  margin-bottom: 8px;
 }
 
-/*CART*/
+.gs-login:hover + .gs-login-popup {
+  display: block;
+}
+
+.gs-login-popup:hover {
+  display: block;
+}
+
+  /*CART*/
 
 .gs-small-cart {
   padding-top: 6px;
   padding-bottom: 7px;
   padding-left: 44px;
-  padding-right: 34px;
+  padding-right: 22px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -380,7 +499,7 @@ a {
   background-position: -31px -68px;
 }
 
-/*HEADER CONTACTS*/
+  /*HEADER CONTACTS*/
 
 .gs-header-contacts {
   position: absolute;
@@ -412,32 +531,36 @@ a {
 
 
 /*MAIN*/
-
-
-/*SLIDER*/
+  /*SLIDER*/
 
 .gs-slider {
+  position: relative;
   text-align: center;
+}
+
+.gs-slider-item {
+  display: none;
 }
 
 .gs-slider-item img {
   display: block;
   margin: 0 auto;
-  position: relative;
 }
 
 .gs-slider-item h2 {
   position: absolute;
-  left: 25%;
-  bottom: 167px;
+  left: 50%;
+  bottom: 105px;
   width: 680px;
+  margin-left: -340px;
 }
 
-.gs-slider-item a {
-  padding: 17px 42px;
+.gs-slider-cta {
   position: absolute;
-  left: 40%;
-  bottom: 120px;
+  left: 50%;
+  bottom: 60px;
+  padding: 17px 42px;
+  margin-left: -130px;
   font-size: 30.77px;
   font-weight: 700;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
@@ -486,6 +609,12 @@ a {
   background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50%;
+}
+
+#btn1:checked ~ #slide1,
+#btn2:checked ~ #slide2,
+#btn3:checked ~ #slide3 {
+  display: block;
 }
 
 /*BANNERS*/
