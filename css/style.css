@@ -828,19 +828,8 @@ h2 {
 }
 
 .gs-breadcrumbs-item a {
-  position: relative;
   font-size: 14px;
   font-weight: 400;
-}
-
-.gs-breadcrumbs-item a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid #ffffff;
-  opacity: 0.4;
 }
 
 .gs-breadcrumbs-item:after {
@@ -855,8 +844,12 @@ h2 {
   content: "";
 }
 
-.gs-breadcrumbs-item:last-child a:after {
+.gs-breadcrumbs-item:last-child a {
   border-bottom: 0;
+}
+
+.gs-breadcrumbs-item:last-child a:hover {
+  color: #ffffff;
 }
 
 /*INFO SEO*/
