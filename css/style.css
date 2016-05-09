@@ -226,7 +226,7 @@ h2 {
 
 .gs-mainmenu {
   float: left;
-  max-width: 55%;
+  max-width: 47%;
 }
 
 .gs-mainmenu>ul {
@@ -243,7 +243,6 @@ h2 {
   display: inline-block;
   vertical-align: top;
   padding: 7px 15px;
-  margin-right: 11px;
   line-height: 18px;
 }
 
@@ -369,7 +368,7 @@ h2 {
 .gs-userblock {
   position: relative;
   float: right;
-  width: 29.7%;
+  width: 32%;
   padding: 20px 0;
   font-size: 0;
   text-align: right;
@@ -929,8 +928,18 @@ h2 {
 
 .gs-products-item-view {
   position: absolute;
-  left: 10%;
+  left: 5%;
+  bottom: 16px;
   display: none;
+  width: 90%;
+  text-align: center;
+}
+
+.gs-btn-item-view {
+  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 
 .gs-products-item:hover {
@@ -1047,11 +1056,10 @@ h2 {
   float: left;
   padding-top: 24px;
   padding-left: 20px;
-  padding-right: 256px;
   padding-bottom: 81px;
   margin: 0 1.1%;
   width: 47.8%;
-  background: #ffffff url("../img/tmp/blog-item.jpg") no-repeat;
+  background: #ffffff url("../img/tmp/blog-item.jpg") no-repeat right bottom;
   background-size: cover;
   border-radius: 15px;
   box-sizing: border-box;
@@ -1068,6 +1076,7 @@ h2 {
 
 .gs-blog-lastitem a {
   display: block;
+  width: 286px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -1122,8 +1131,12 @@ h2 {
   margin-bottom: 26px;
 }
 
+.gs-test {
+  max-width: 350px;
+}
+
 .gs-subscribe-content .gs-input {
-  width: 63%;
+  width: 100%;
 }
 
 .gs-subscribe-content .gs-btn {
@@ -1248,6 +1261,12 @@ h2 {
 .gs-filter-select-sort:hover {
   background-color: #ffffff;
   color: #323232;
+}
+
+.gs-filter-form-sort:hover:after {
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #323232 transparent transparent transparent;
 }
 
 .gs-filter-form-sort select:focus {
@@ -1498,6 +1517,7 @@ h2 {
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;
+  box-sizing: border-box;
 }
 
 .gs-paging li.active a,
@@ -1671,17 +1691,6 @@ h2 {
   z-index: 900;
 }
 
-.gs-feedback-show {
-  display: block;
-  -webkit-animation: fly 0.6s;
-  animation: fly 0.6s;
-}
-
-.gs-feedback-error {
-  -webkit-animation: shake 0.6s;
-  animation: shake 0.6s;
-}
-
 .gs-feedback-popup h4 {
   padding: 0;
   margin: 0;
@@ -1748,6 +1757,23 @@ h2 {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 800;
+}
+
+.gs-feedback-show {
+  display: block;
+  -webkit-animation: fly 0.6s;
+  animation: fly 0.6s;
+}
+
+.gs-overlay-show {
+  display: block;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.gs-feedback-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 @-webkit-keyframes fly {

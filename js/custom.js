@@ -11,7 +11,7 @@ var storageName = localStorage.getItem("name");
 feedbackBtn.addEventListener("click", function(event) {
   event.preventDefault();
   feedbackPopup.classList.add("gs-feedback-show");
-  feedbackOverlay.classList.add("gs-feedback-show");
+  feedbackOverlay.classList.add("gs-overlay-show");
   
   if(storageName) {
     feedbackName.value = storageName;
@@ -25,7 +25,7 @@ feedbackBtn.addEventListener("click", function(event) {
 feedbackClose.addEventListener("click", function(event) {
   event.preventDefault();
   feedbackPopup.classList.remove("gs-feedback-show");
-  feedbackOverlay.classList.remove("gs-feedback-show");
+  feedbackOverlay.classList.remove("gs-overlay-show");
   feedbackPopup.classList.remove("gs-feedback-error");
 });
 
