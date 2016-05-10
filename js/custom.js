@@ -5,7 +5,8 @@ var feedbackClose = document.querySelector(".gs-feedback-close");
 var feedbackName = document.querySelector("[name=feedback-name]");
 var feedbackEmail = document.querySelector("[name=feedback-email]");
 var feedbackForm = document.querySelector(".gs-feedback-form");
-var gsInput = document.querySelector(".gs-input");
+var gsSearch = document.getElementById("search");
+var gsLogin = document.getElementById("login-email");
 var gsHint = document.querySelector(".gs-input-hint");
 
 var storageName = localStorage.getItem("name");
@@ -49,12 +50,22 @@ window.addEventListener("keydown", function(event) {
     if(feedbackPopup.classList.contains("gs-feedback-show")) {
       feedbackPopup.classList.remove("gs-feedback-show");
       feedbackPopup.classList.remove("gs-feedback-error");
+      feedbackOverlay.classList.remove("gs-overlay-show");
     }
   }
 });
 
-gsInput.onblur = function() {
-  if(gsInput.value) {
+gsSearch.onblur = function() {
+  if(gsSearch.value) {
+    gsHint.classList.add("gs-onblur-label");
+  }
+  else {
+    gsHint.classList.remove("gs-onblur-label");
+  }
+}
+
+gsLogin.onblur = function() {
+  if(gsLogin.value) {
     gsHint.classList.add("gs-onblur-label");
   }
   else {
