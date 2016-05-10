@@ -127,75 +127,12 @@ h2 {
   border-width: 2px;
 }
 
+
 .gs-input:focus,
 .gs-textarea:focus {
   padding: 14px;
   border-width: 2px;
   border-color: rgba(46,136,228, 0.52);
-}
-
-.gs-input::-webkit-input-placeholder,
-.gs-textarea::-webkit-input-placeholder {
-  color: #999999;
-  font-weight: 400;
-}
-
-.gs-input:-moz-placeholder,
-.gs-textarea:-moz-placeholder {
-  color: #999999;
-  font-weight: 400;
-}
-
-.gs-input::-moz-placeholder,
-.gs-textarea::-moz-placeholder {
-  color: #999999;
-  font-weight: 400;
-}
-
-.gs-input:-ms-input-placeholder,
-.gs-textarea:-ms-input-placeholder {
-  color: #999999;
-  font-weight: 400;
-}
-
-.gs-input:focus::-webkit-input-placeholder,
-.gs-textarea:focus::-webkit-input-placeholder {
-  position: relative;
-  left: 0;
-  top: -40px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #5b9ddf;
-}
-
-.gs-input:focus:-moz-placeholder,
-.gs-textarea:focus:-moz-placeholder {
-  position: absolute;
-  left: 0;
-  top: -20px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #5b9ddf;
-}
-
-.gs-input:focus::-moz-placeholder,
-.gs-textarea:focus::-moz-placeholder {
-  position: relative;
-  left: 0;
-  top: -20px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #5b9ddf;
-}
-
-.gs-input:focus:-ms-input-placeholder,
-.gs-textarea:focus:-ms-input-placeholder {
-  position: absolute;
-  left: 0;
-  top: -20px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #5b9ddf;
 }
 
 /*END GENERAL*/
@@ -441,6 +378,31 @@ h2 {
 .gs-search-form input[type="text"] {
   width: 311px;
   font-size: 14px;
+}
+
+.gs-input-hint {
+  position: absolute;
+  left: 30px;
+  top: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.gs-input:focus + .gs-input-hint {
+  left: 30px;
+  top: 5px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+
+.gs-onblur-label {
+  left: 30px;
+  top: 5px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
 }
 
 .gs-search:hover + .gs-search-form {

@@ -5,6 +5,8 @@ var feedbackClose = document.querySelector(".gs-feedback-close");
 var feedbackName = document.querySelector("[name=feedback-name]");
 var feedbackEmail = document.querySelector("[name=feedback-email]");
 var feedbackForm = document.querySelector(".gs-feedback-form");
+var gsInput = document.querySelector(".gs-input");
+var gsHint = document.querySelector(".gs-input-hint");
 
 var storageName = localStorage.getItem("name");
 
@@ -50,3 +52,12 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+gsInput.onblur = function() {
+  if(gsInput.value) {
+    gsHint.classList.add("gs-onblur-label");
+  }
+  else {
+    gsHint.classList.remove("gs-onblur-label");
+  }
+}
