@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси - Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="gs-mainheader">
-    <div class="container">
+    <div class="container clearfix">
       <div class="gs-logo">
-        <a href="index.html"><img src="http://placehold.it/154x64" alt="" width="154" height="64"></a>
+        <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a>
       </div>
-      <div class="gs-mainmenu">
+      <nav class="gs-mainmenu">
         <ul>
-          <li class="gs-mainmenu-item active"><a href="#">Каталог</a>
+          <li class="gs-mainmenu-item"><a href="#">Каталог</a>
             <ul class="gs-submenu">
               <li class="gs-submenu-item"><a href="#">Новинки</a></li>
               <li class="gs-submenu-item"><a href="#">Сливочное</a></li>
@@ -24,202 +26,290 @@
           <li class="gs-mainmenu-item"><a href="#">Доставка и оплата</a></li>
           <li class="gs-mainmenu-item"><a href="#">О компании</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="gs-userblock">
         <div class="gs-userblock-btn">
-          <a class="gs-search" href="#">Поиск</a>
-          <a class="gs-login" href="#">Вход</a>
-          <a class="gs-small-cart" href="#">Пусто</a>  
+          <a class="gs-top-btn gs-search" href="#">Поиск</a>
+          <div class="gs-search-form">
+            <form action="#" method="get">
+              <input class="gs-input" type="text" name="search" id="search" placeholder="Что ищем?">  
+            </form>
+          </div>
+          <a class="gs-top-btn gs-login" href="#">Вход</a>
+          <div class="gs-login-popup">
+            <form class="gs-login-form" action="#" method="post">
+              <input class="gs-input" type="text" name="login-email" placeholder="Электронная почта">
+              <input class="gs-input" type="text" name="login-pass" placeholder="Пароль">
+              <button class="gs-btn" type="submit">Войти</button>
+            </form>
+            <a class="gs-black-link" href="#">Забыли пароль?</a>
+            <a class="gs-black-link" href="#">Новая регистрация</a>
+          </div>
+          <a class="gs-top-btn gs-small-cart-full" href="#">2 товара</a> 
+          <div class="gs-small-cart-popup">
+            <ul>
+              <li class="gs-small-cart-popup-item">
+                <a class="gs-small-cart-delete" title="Закрыть" href="#">Закрыть</a>
+                <a href="#"><img class="gs-small-cart-img" src="img/tmp/1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></a>
+                <a class="gs-small-cart-name" href="#">Пломбир с апельсиновым джемом</a>
+                <span>1,5 кг х</span>
+                <span>200 руб.</span>
+                <span>300 руб.</span>
+              </li>
+              <li class="gs-small-cart-popup-item">
+                <a class="gs-small-cart-delete" title="Закрыть" href="#">Закрыть</a>
+                <a href="#"><img class="gs-small-cart-img" src="img/tmp/3-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></a>
+                <a class="gs-small-cart-name" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                <span>1,5 кг х</span>
+                <span>300 руб.</span>
+                <span>450 руб.</span>
+              </li>
+            </ul>
+            <div class="gs-small-cart-sum">
+              <span class="gs-small-cart-overall">Итого: 750 руб.</span>
+              <a class="gs-btn" href="#">Оформить заказ</a>
+            </div>
+          </div>   
         </div>
-        <div class="gs-header-phone">
-          <p>С 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
+        <div class="gs-header-contacts">
+          <span class="gs-header-hours">С 10 до 20, ежедневно</span>
+          <span class="gs-header-phone">8 812 450-25-25</span>
         </div>
-        <div class="gs-search-form">
-          <input type="text" name="search" id="search" placeholder="Что ищем?">
-        </div>
-        <div class="gs-login-popup">
-          <form class="gs-login-form" action="#" method="post">
-            <input type="text" name="login-email" placeholder="Электронная почта">
-            <input type="text" name="login-pass" placeholder="Пароль">
-            <button class="gs-btn" type="submit">Войти</button>
-          </form>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </div>
-        <div class="gs-small-cart-popup">
-          <ul>
-            <li>
-              <a class="gs-small-cart-delete" href="#">X</a>
-              <a href="#"><img class="gs-small-cart-img" src="http://placehold.it/33x33" alt="" width="33" height="33"></a>
-              <a class="gs-small-cart-name" href="#">Пломбир с апельсиновым джемом</a>
-              <span>1,5 кг х</span>
-              <span>200 руб.</span>
-              <span>300 руб.</span>
-            </li>
-            <li>
-              <a class="gs-small-cart-delete" href="#">X</a>
-              <a href="#"><img class="gs-small-cart-img" src="http://placehold.it/33x33" alt="" width="33" height="33"></a>
-              <a class="gs-small-cart-name" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-              <span>1,5 кг х</span>
-              <span>300 руб.</span>
-              <span>450 руб.</span>
-            </li>
-          </ul>
-          <span>Итого: 750 руб.</span>
-          <a class="gs-btn" href="#">Оформить заказ</a>
-        </div>  
       </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container clearfix">
     <div class="gs-breadcrumbs">
       <ul>
-        <li class="gs-breadcrumbs-item"><a href="index.html">Главная</a></li>
-        <li class="gs-breadcrumbs-item"><a href="#">Каталог</a></li>
-        <li class="gs-breadcrumbs-item"><a href="#">Сливочное</a></li>
+        <li class="gs-breadcrumbs-item"><a class="gs-white-link" href="index.html">Главная</a></li>
+        <li class="gs-breadcrumbs-item"><a class="gs-white-link" href="catalog.html">Каталог</a></li>
+        <li class="gs-breadcrumbs-item"><a class="gs-white-link">Сливочное</a></li>
       </ul>
     </div>
-    <h1>Сливочное мороженное</h1>
-    <div class="gs-filter">
+    <h1 class="gs-catalog-title">Сливочное мороженное</h1>
+    <div class="gs-filter clearfix">
       <form class="gs-filter-form" action="#" method="post">
-      <!--ORDER SELECT-->
-        <label for="filter-sort">Сортировка:</label>
-        <select name="filter-sort" id="filter-sort">
-          <option value="popular">по популярности</option>
-          <option value="lowprice">сначала недорогие</option>
-          <option value="highprice">сначала дорогие</option>
-          <option value="fat">по жирности</option>
-        </select>
-        <!--PRICE SLIDER-->
-        <label for="price-slider">Цена: 100 руб. &ndash; 500 руб.</label>
-        <input type="range" min="0" max="500" step="10" id="price-slider">
-        <!--FATNESS RADIO-->
-        <label for="10">Жирность:</label>
-        <input type="radio" name="fatness" id="0" value="0">
-        <label for="0">0%</label>
-        <input type="radio" name="fatness" id="10" value="10" checked>
-        <label for="10">до 10%</label>
-        <input type="radio" name="fatness" id="30" value="30">
-        <label for="30">до 30%</label>
-        <input type="radio" name="fatness" id="30-more" value="30-more">
-        <label for="30-more">выше 30%</label>
+        <div class="gs-filter-row clearfix">
+        <!--ORDER SELECT-->
+          <div class="gs-filter-form-sort">
+            <label>Сортировка:</label>
+            <select class="gs-filter-select-sort" name="filter-sort" id="filter-sort">
+              <option value="popular">по популярности</option>
+              <option value="lowprice">сначала недорогие</option>
+              <option value="highprice">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </div>
+          <!--PRICE SLIDER-->
+          <div class="gs-filter-form-price">
+            <div class="gs-price-controls">
+              <label class="gs-label-price">Цена: <input type="text" name="min-price" value="100"> руб. &ndash; <input type="text" name="max-price" value="500"> руб.</label>
+            </div>
+            <div class="gs-range-controls">
+              <div class="gs-range-scale">
+                <div class="gs-range-bar"></div>
+              </div> 
+              <div class="gs-range-toggle gs-range-toggle-min"></div>
+              <div class="gs-range-toggle gs-range-toggle-max"></div> 
+            </div> 
+          </div>
+          <!--FATNESS RADIO-->
+          <div class="gs-filter-form-fatness">
+            <label for="10">Жирность:</label>
+            <div class="gs-filter-bg">
+              <input type="radio" name="fatness" id="0" value="0">
+              <label for="0">0%</label>
+              <input type="radio" name="fatness" id="10" value="10" checked>
+              <label for="10">до 10%</label>
+              <input type="radio" name="fatness" id="30" value="30">
+              <label for="30">до 30%</label>
+              <input type="radio" name="fatness" id="30-more" value="30-more">
+              <label for="30-more">выше 30%</label>  
+            </div> 
+          </div>
+        </div>
         <!--FILLER CHECKBOXES-->
-        <label>Наполнители:</label>
-        <input type="checkbox" id="choco" name="choco" checked>
-        <label for="choco">шоколадные</label>
-        <input type="checkbox" id="powder" name="powder" checked>
-        <label for="powder">сахарные присыпки</label>
-        <input type="checkbox" id="fruits" name="fruits">
-        <label for="fruits">фрукты</label>
-        <input type="checkbox" id="syrup" name="syrup">
-        <label for="syrup">сиропы</label>
-        <input type="checkbox" id="jam" name="jam">
-        <label for="jam">джемы</label>
+        <div class="gs-filter-form-filler">
+          <label>Наполнители:</label>
+          <div class="gs-filter-bg">
+            <input type="checkbox" id="choco" name="choco" checked>
+            <label for="choco">шоколадные</label>
+            <input type="checkbox" id="powder" name="powder" checked>
+            <label for="powder">сахарные присыпки</label>
+            <input type="checkbox" id="fruits" name="fruits">
+            <label for="fruits">фрукты</label>
+            <input type="checkbox" id="syrup" name="syrup">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" id="jam" name="jam">
+            <label for="jam">джемы</label> 
+          </div> 
+        </div>
         <!--SUBMIT BTN-->
-        <button type="submit">Применить</button>
+        <div class="gs-filter-form-btn">
+          <button type="submit">Применить</button> 
+        </div>  
       </form>
     </div>
     <section class="gs-products">
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
           <span>310 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
           <span>380 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
           <span>355 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
           <span>415 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/1-1.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></a>
           <span>325 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с брусничным джемом</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с брусничным джемом</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/2-1.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></a>
           <span>410 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/3-1.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></a>
           <span>375 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/4-1.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></a>
           <span>320 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с шоколадной стружкой</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с шоколадной стружкой</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/1-2.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></a>
           <span>440 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/2-2.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></a>
           <span>435 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочноe с ментоловым сиропом</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочноe с ментоловым сиропом</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/3-2.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></a>
           <span>355 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с кусочками черного шоколада</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с кусочками черного шоколада</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="gs-products-item">
         <figure>
-          <a href="#"><img src="http://placehold.it/200x200" alt="" width="200" height="200"></a>
+          <a href="#"><img src="img/tmp/4-2.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></a>
           <span>420 руб/кг</span>
         </figure>
-        <a class="gs-products-item-title" href="#">Сливочное с мятным сиропом</a>
+        <div class="gs-products-item-title">
+          <a class="gs-products-item-title" href="#">Сливочное с мятным сиропом</a>
+        </div>
+        <div class="gs-products-item-view">
+          <a class="gs-btn" href="#">Быстрый просмотр</a>
+        </div>
       </article>
     </section>
     <div class="gs-paging">
       <ul>
-        <li><a href="#">&lang;</a></li>
+        <li><a class="disabled" href="#"></a></li>
         <li class="active"><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
-        <li><a href="#">&rang;</a></li>
+        <li><a href="#"></a></li>
       </ul>
     </div>  
   </main>
   <footer class="gs-mainfooter">
-    <div class="container">
+    <div class="container clearfix">
       <div class="gs-footer-socials">
         <a class="gs-socials tw" href="#">Twitter</a>
         <a class="gs-socials ins" href="#">Instagram</a>
@@ -228,17 +318,17 @@
       </div>
       <div class="gs-footermenu">
         <ul>
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
+          <li><a class="gs-white-link" href="#">Для поставщиков</a></li>
+          <li><a class="gs-white-link" href="#">Наши документы</a></li>
+          <li><a class="gs-white-link" href="#">О производстве</a></li>
+          <li><a class="gs-white-link" href="#">Экологические стандарты</a></li>
         </ul>
       </div>
       <div class="gs-author">
-        <img src="http://placehold.it/108x38" alt="" width="108" height="38">
-        <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
+        <img src="img/author.svg" width="108" height="37" alt="HTML Academy">
+        <p>Сделано в <a class="gs-white-link" href="#">HTML Academy</a> &copy; 2016</p>
       </div>
     </div>
-  </footer>
+  </footer>     
   </body>
-—</html>
+</html>
