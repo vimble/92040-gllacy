@@ -7,9 +7,9 @@ var feedbackEmail = document.querySelector("[name=feedback-email]");
 var feedbackMsg = document.querySelector("[name=feedback-text]");
 var feedbackForm = document.querySelector(".gs-feedback-form");
 
-var gsSearch = document.getElementById("search");
-var gsLogin = document.getElementById("login-email");
-var gsPass = document.getElementById("login-pass");
+//var gsSearch = document.getElementById("search");
+//var gsLogin = document.getElementById("login-email");
+//var gsPass = document.getElementById("login-pass");
 
 var storageName = localStorage.getItem("name");
 
