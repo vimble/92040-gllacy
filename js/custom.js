@@ -4,10 +4,12 @@ var feedbackOverlay = document.querySelector(".gs-modal-overlay");
 var feedbackClose = document.querySelector(".gs-feedback-close");
 var feedbackName = document.querySelector("[name=feedback-name]");
 var feedbackEmail = document.querySelector("[name=feedback-email]");
+var feedbackMsg = document.querySelector("[name=feedback-text]");
 var feedbackForm = document.querySelector(".gs-feedback-form");
+
 var gsSearch = document.getElementById("search");
 var gsLogin = document.getElementById("login-email");
-var gsHint = document.querySelector(".gs-input-hint");
+var gsPass = document.getElementById("login-pass");
 
 var storageName = localStorage.getItem("name");
 
@@ -55,20 +57,58 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
+//LABEL OVER INPUT
+
 gsSearch.onblur = function() {
   if(gsSearch.value) {
-    gsHint.classList.add("gs-onblur-label");
+    gsSearch.classList.add("filled");
   }
   else {
-    gsHint.classList.remove("gs-onblur-label");
+    gsSearch.classList.remove("filled");
   }
 }
 
 gsLogin.onblur = function() {
   if(gsLogin.value) {
-    gsHint.classList.add("gs-onblur-label");
+    gsLogin.classList.add("filled");
   }
   else {
-    gsHint.classList.remove("gs-onblur-label");
+    gsLogin.classList.remove("filled");
+  }
+}
+
+gsPass.onblur = function() {
+  if(gsPass.value) {
+    gsPass.classList.add("filled");
+  }
+  else {
+    gsPass.classList.remove("filled");
+  }
+}
+
+feedbackName.onblur = function() {
+  if(feedbackName.value) {
+    feedbackName.classList.add("filled");
+  }
+  else {
+    feedbackName.classList.remove("filled");
+  }
+}
+
+feedbackEmail.onblur = function() {
+  if(feedbackEmail.value) {
+    feedbackEmail.classList.add("filled");
+  }
+  else {
+    feedbackEmail.classList.remove("filled");
+  }
+}
+
+feedbackMsg.onblur = function() {
+  if(feedbackMsg.value) {
+    feedbackMsg.classList.add("filled");
+  }
+  else {
+    feedbackMsg.classList.remove("filled");
   }
 }
