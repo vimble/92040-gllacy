@@ -160,6 +160,8 @@ h2 {
   font-size: 11px;
   line-height: 13px;
   color: #5b9ddf;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .gs-textarea:focus + label,
@@ -170,6 +172,8 @@ h2 {
   font-size: 11px;
   line-height: 13px;
   color: #5b9ddf;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .gs-input.filled + label,
