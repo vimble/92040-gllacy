@@ -32,7 +32,7 @@ h2 {
 }
 
 .container {
-  padding: 0 2.3%;
+  padding: 0 2%;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
@@ -120,6 +120,11 @@ h2 {
   outline: 0;
 }
 
+.gs-textarea {
+  width: 445px;
+  resize: none;
+}
+
 .gs-input:hover,
 .gs-textarea:hover {
   padding: 14px;
@@ -197,6 +202,7 @@ h2 {
   width: 154px;
   height: 64px;
   margin-right: 15px;
+  margin-left: -7px;
   padding: 10px 0;
 }
 
@@ -208,13 +214,12 @@ h2 {
   /*MAINMENU*/
 
 .gs-mainmenu {
-  float: left;
-  max-width: 47%;
+  float: left;  
 }
 
 .gs-mainmenu>ul {
   padding: 0;
-  padding-top: 22px;
+  padding-top: 24px;
   margin: 0;
   list-style: none;
 }
@@ -224,7 +229,7 @@ h2 {
 .gs-mainmenu-item {
   position: relative;
   display: inline-block;
-  padding: 7px 15px;
+  padding: 7px 13px;
   vertical-align: top;
   line-height: 18px;
 }
@@ -352,7 +357,7 @@ h2 {
   position: relative;
   float: right;
   width: 32%;
-  padding: 20px 0;
+  padding: 25px 0;
   font-size: 0;
   text-align: right;
 }
@@ -412,7 +417,7 @@ h2 {
 .gs-search-form {
   position: absolute;
   right: 230px;
-  bottom: -80px;
+  bottom: -75px;
   z-index: 100;
   display: none;
   padding: 20px 15px;
@@ -438,8 +443,8 @@ h2 {
 
 .gs-login {
   width: 92px;
-  padding-top: 6px;
-  padding-bottom: 7px;
+  padding-top: 5px;
+  padding-bottom: 6px;
   padding-left: 44px;
   padding-right: 16px;
   margin-right: 10px;
@@ -462,8 +467,8 @@ h2 {
 
 .gs-login-popup {
   position: absolute;
-  top: 60px;
-  right: 125px;
+  top: 65px;
+  right: 127px;
   z-index: 200;
   display: none;
   padding: 20px;
@@ -520,8 +525,8 @@ h2 {
 .gs-small-cart,
 .gs-small-cart-full {
   width: 117px;
-  padding-top: 6px;
-  padding-bottom: 7px;
+  padding-top: 5px;
+  padding-bottom: 6px;
   padding-left: 44px;
   padding-right: 15px;
   font-size: 14px;
@@ -673,13 +678,13 @@ h2 {
 
 .gs-header-contacts {
   position: absolute;
-  right: 0;
-  top: 75px;
+  right: -2px;
+  top: 73px;
 }
 
 .gs-header-hours {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -743,10 +748,10 @@ h2 {
 .gs-slider-cta {
   position: absolute;
   left: 50%;
-  bottom: 60px;
+  bottom: 57px;
   z-index: 40;
-  padding: 17px 42px;
-  margin-left: -130px;
+  padding: 20px 44px;
+  margin-left: -140px;
   font-size: 30.77px;
   font-weight: 700;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
@@ -754,15 +759,15 @@ h2 {
 
 .gs-slider-buttons {
   position: absolute;
-  left: 0;
-  bottom: 75px;
+  left: -1px;
+  bottom: 79px;
 }
 
 .gs-slider-buttons label {
   display: inline-block;
   width: 17px;
   height: 17px;
-  margin-right: 8px;
+  margin-right: 4px;
   vertical-align: top;
   border-radius: 50%;
   border: 2px solid #ffffff;
@@ -774,27 +779,27 @@ h2 {
   background-color: rgba(255,255,255, 0.4);
 }
 
-#btn1:checked ~ .gs-bgbody #slide1,
-#btn2:checked ~ .gs-bgbody #slide2,
-#btn3:checked ~ .gs-bgbody #slide3 {
+.gs-slider-btn1:checked ~ .gs-bgbody .gs-slide1,
+.gs-slider-btn2:checked ~ .gs-bgbody .gs-slide2,
+.gs-slider-btn3:checked ~ .gs-bgbody .gs-slide3 {
   display: block;
 }
 
-#btn1:checked ~ .gs-bgbody {
+.gs-slider-btn1:checked ~ .gs-bgbody {
   background-color: #849d8f;
 }
 
-#btn2:checked ~ .gs-bgbody {
+.gs-slider-btn2:checked ~ .gs-bgbody {
   background-color: #8996a6;
 }
 
-#btn3:checked ~ .gs-bgbody {
+.gs-slider-btn3:checked ~ .gs-bgbody {
   background-color: #9d8b84;
 }
 
-#btn1:checked ~ .gs-bgbody label[for="btn1"],
-#btn2:checked ~ .gs-bgbody label[for="btn2"],
-#btn3:checked ~ .gs-bgbody label[for="btn3"] {
+.gs-slider-btn1:checked ~ .gs-bgbody .gs-slider-btn1,
+.gs-slider-btn2:checked ~ .gs-bgbody .gs-slider-btn2,
+.gs-slider-btn3:checked ~ .gs-bgbody .gs-slider-btn3 {
   background-color: #ffffff;
 }
 
@@ -804,20 +809,20 @@ h2 {
   position: relative;
   z-index: 100;
   margin: 0 -1.1%;
-  margin-top: -20px;
-  margin-bottom: 40px;
+  margin-top: -17px;
+  margin-bottom: 39px;
 }
 
 .gs-banner-item {
   float: left;
-  width: 47.8%;
-  padding-top: 20px;
-  padding-left: 20px;
+  width: 48.1%;
+  padding-top: 15px;
+  padding-left: 18px;
   padding-right: 20px;
   padding-bottom: 24px;
-  margin: 0 1.1%;
+  margin: 0 0.9%;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .gs-banner-item h3 {
@@ -834,11 +839,12 @@ h2 {
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 }
 
 .gs-banner-cta {
   text-align: right;
+  margin-bottom: 12px
 }
 
 .gs-banner-item:first-child {
@@ -847,25 +853,39 @@ h2 {
 }
 
 .gs-banner-item:last-child {
+  float: right;
   background: #3c2314 url("../img/tmp/banner2.jpg") no-repeat;
   background-size: cover;
 }
 
 /*PRODUCTS*/
 
+.gs-products-main,
 .gs-products {
-  margin: 0 -2.2%;
+  margin: 0 -0.1%;
+  margin-bottom: 20px;
   font-size: 0;
   vertical-align: top;
+}
+
+.gs-products {
+  margin-bottom: 40px;
 }
 
 .gs-products-item {
   position: relative;
   display: inline-block;
-  width: 20.6%;
-  padding: 1.1%;
-  margin: 0 1.1%;
+  width: 23.3%;
+  margin-right: 2.26%;
   vertical-align: top;
+}
+
+.gs-products .gs-products-item {
+  margin-bottom: 20px;
+}
+
+.gs-products-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .gs-products-item figure {
@@ -894,7 +914,7 @@ h2 {
 .gs-products-item-price {
   position: absolute;
   left: 0;
-  bottom: 30px;
+  bottom: 8px;
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
@@ -907,7 +927,8 @@ h2 {
 
 .gs-products-item-price span:first-child:after {
   content: "₽";
-  margin-left: 5px;
+  margin-left: 3px;
+  font-size: 43px;
 }
 
 .gs-products-item-price span:last-child {
@@ -929,13 +950,13 @@ h2 {
 
 .gs-products-item-view {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -6px;
+  top: -6px;
   bottom: 16px;
   z-index: 20;
   display: none;
-  width: 100%;
-  height: 113%;
+  width: 105%;
+  height: 118%;
   text-align: center;
   background-color: rgba(255,255,255, 0.2);
   border-radius: 15px;
@@ -956,14 +977,14 @@ h2 {
   display: block;
 }
 
-.gs-products-item:hover .gs-products-item-title>a {
+.gs-products-item:hover .gs-products-item-title {
   border-bottom: 0;
 }
 
 /*BREADCRUMBS*/
 
 .gs-breadcrumbs {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .gs-breadcrumbs ul {
@@ -974,7 +995,7 @@ h2 {
 .gs-breadcrumbs-item {
   position: relative;
   display: inline-block;
-  margin-right: 22px;
+  margin-right: 16px;
   vertical-align: top;
 }
 
@@ -986,7 +1007,7 @@ h2 {
 .gs-breadcrumbs-item:after {
   content: "»";
   position: absolute;
-  right: -16px;
+  right: -14px;
   bottom: 0px;
   color: #ffffff;
 }
@@ -1006,7 +1027,9 @@ h2 {
 /*INFO SEO*/
 
 .gs-info {
-  padding: 27px 21px;
+  padding: 0 18px;
+  padding-top: 22px;
+  padding-bottom: 20px;
   margin-bottom: 40px;
   font-size: 0;
   background: #f0e5d2 url("../img/info-bg.jpg");
@@ -1014,7 +1037,11 @@ h2 {
 }
 
 .gs-info h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 11px;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 500;
 }
 
@@ -1039,29 +1066,28 @@ h2 {
   top: 0;
   display: inline-block;
   width: 49px;
-  vertical-align: top;
 }
 
 .gs-info-item p {
   display: inline-block;
   margin: 0;
+  margin-top: -4px;
   padding: 0;
   font-size: 16px;
-  vertical-align: top;
 }
 
 /*MARKETING*/
 
 .gs-marketing {
-  margin: 0 -1.1%;
+  margin: 0 -1.2%;
   margin-bottom: 40px;
 }
 
 .gs-blog-lastitem {
   float: left;
-  padding-top: 24px;
-  padding-left: 20px;
-  padding-bottom: 81px;
+  padding-top: 22px;
+  padding-left: 19px;
+  padding-bottom: 82px;
   margin: 0 1.1%;
   width: 47.8%;
   background: #ffffff url("../img/tmp/blog-item.jpg") no-repeat right bottom;
@@ -1072,7 +1098,7 @@ h2 {
 
 .gs-blog-lastitem span {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 4px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -1081,10 +1107,10 @@ h2 {
 
 .gs-blog-lastitem a {
   display: block;
-  width: 286px;
+  width: 281px;
 }
 
-.gs-blog-lastitem a>span {
+.gs-blog-lastitem-name span {
   display: inline;
   font-size: 24px;
   font-weight: 700;
@@ -1097,7 +1123,7 @@ h2 {
 .gs-subscribe {
   float: left;
   width: 47.8%;
-  padding: 5px 4px;
+  padding: 6px 5px;
   margin: 0 1.1%;
   background: -webkit-repeating-linear-gradient(
   315deg,
@@ -1127,9 +1153,9 @@ h2 {
 
 .gs-subscribe-content {
   position: relative;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 23px;
+  padding-top: 27px;
+  padding-left: 21px;
+  padding-right: 20px;
   padding-bottom: 35px;
   border-radius: 15px;
   background-color: #f8f7f4;
@@ -1139,13 +1165,14 @@ h2 {
   margin: 0;
   padding: 0;
   color: #5a5a5a;
-  margin-bottom: 26px;
+  margin-bottom: 35px;
 }
 
 .gs-subscribe-content .gs-btn {
   position: absolute;
-  right: 23px;
-  bottom: 40px;
+  right: 21px;
+  bottom: 34px;
+  padding: 10px 19px;
 }
 
 /*CONTACTS*/
@@ -1157,6 +1184,12 @@ h2 {
   background: #ece5c8 url("../img/tmp/map.jpg") no-repeat 50% 0;
 }
 
+.gs-contacts iframe {
+  width: 100%;
+  height: 430px;
+  border: 0;
+}
+
 .gs-contacts-content {
   position: relative;
 }
@@ -1164,9 +1197,10 @@ h2 {
 .gs-contacts-info {
   position: absolute;
   right: 0;
-  top: -400px;
+  top: -375px;
   width: 302px;
-  padding: 30px 25px;
+  padding: 30px 26px;
+  padding-bottom: 40px;
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
   box-sizing: border-box;
@@ -1175,7 +1209,7 @@ h2 {
 .gs-contacts-info p {
   padding: 0;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1194,14 +1228,18 @@ h2 {
 }
 
 .gs-contacts-info p:last-of-type {
-  margin-bottom: 26px;
+  margin-bottom: 37px;
+}
+
+.gs-contacts-feedback {
+  padding: 10px 27px;
 }
 
 /*CATALOG*/
 
 .gs-catalog-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
   /*CATALOG FILTER*/
@@ -1213,16 +1251,15 @@ h2 {
 }
 
 .gs-filter-row {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .gs-filter-form-sort label,
-.gs-filter-form-price label,
 .gs-filter-form-fatness label:first-child,
 .gs-filter-form-filler label:first-child {
   display: block;
-  padding-left: 16px;
-  margin-bottom: 6px;
+  padding-left: 15px;
+  margin-bottom: 3px;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
@@ -1257,8 +1294,8 @@ h2 {
 .gs-filter-form-sort:after {
   content: "";
   position: absolute;
-  right: 15px;
-  top: 45px;
+  right: 17px;
+  top: 41px;
   border-style: solid;
   border-width: 5px 4px 0 4px;
   border-color: #ffffff transparent transparent transparent;
@@ -1286,13 +1323,27 @@ h2 {
   box-sizing: border-box;
 }
 
+.gs-price-controls span {
+  color: #ffffff;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.gs-label-price {
+  color: #ffffff;
+  font-size: 14px;
+}
+
 .gs-range-controls {
   position: relative;
   width: 100%;
   height: 36px;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 3px;
   background-color: rgba(255,255,255, 0.3);
   border-radius: 50px;
   box-sizing: border-box;
@@ -1312,7 +1363,7 @@ h2 {
 
 .gs-range-controls .gs-range-toggle {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -1335,7 +1386,7 @@ h2 {
   left: 133px;
 }
 
-.gs-label-price input {
+.gs-label-price>input {
   width: 25px;
   color: #ffffff;
   background: none;
@@ -1357,21 +1408,20 @@ h2 {
   color: #ffffff;
   background-color: rgba(255,255,255, 0.3);
   border-radius: 50px;
-  padding: 8px 16px;
+  padding: 7px 16px;
 }
 
 .gs-filter-bg input[type="radio"] {
   display: none;
 }
 
-
-.gs-filter-bg input[type="radio"] + label {
+input[name="fatness"] + label {
   position: relative;
-  padding-left: 29px;
-  margin-right: 12px;
+  padding-left: 30px;
+  margin-right: 15px;
 }
 
-.gs-filter-bg input[type="radio"] + label:before {
+input[name="fatness"] + label:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -1384,20 +1434,20 @@ h2 {
   cursor: pointer;
 }
 
-.gs-filter-bg input[type="radio"] + label:hover:before {
+input[name="fatness"] + label:hover:before {
   left: -1px;
   top: -1px;
   border-width: 2px;
 }
 
-.gs-filter-bg input[type="radio"]:disabled + label:before {
+input[name="fatness"]:disabled + label:before {
   left: 0;
   top: 0;
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-.gs-filter-bg input[type="radio"]:checked + label:after {
+input[name="fatness"]:checked + label:after {
   content: "";
   position: absolute;
   left: 5px;
@@ -1409,7 +1459,7 @@ h2 {
   cursor: pointer;
 }
 
-.gs-filter-bg input[type="radio"]:disabled + label:after {
+input[name="fatness"]:disabled + label:after {
   opacity: 0.4;
 }
 
@@ -1418,17 +1468,17 @@ h2 {
   width: 703px;
 }
 
-.gs-filter-bg input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-.gs-filter-bg input[type="checkbox"] + label {
+input[type="checkbox"] + label {
   position: relative;
-  padding-left: 31px;
-  margin-right: 12px;
+  padding-left: 30px;
+  margin-right: 17px;
 }
 
-.gs-filter-bg input[type="checkbox"] + label:before {
+input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1441,20 +1491,20 @@ h2 {
   cursor: pointer;
 }
 
-.gs-filter-bg input[type="checkbox"]:hover + label:before {
+input[type="checkbox"]:hover + label:before {
   left: -1px;
   top: -1px;
   border-width: 2px;
 }
 
-.gs-filter-bg input[type="checkbox"]:disabled + label:before {
+input[type="checkbox"]:disabled + label:before {
   left: 0;
   top: 0;
   border-width: 1px;
   opacity: 0.4;
 }
 
-.gs-filter-bg input[type="checkbox"]:checked + label:after {
+input[type="checkbox"]:checked + label:after {
   content: "";
   position: absolute;
   left: 4px;
@@ -1471,7 +1521,7 @@ h2 {
   cursor: pointer;
 }
 
-.gs-filter-bg input[type="checkbox"]:disabled + label:after {
+input[type="checkbox"]:disabled + label:after {
   opacity: 0.4;
 }
 
@@ -1479,11 +1529,12 @@ h2 {
   float: right;
   margin-top: 26px;
   width: 144px;
-  text-align: right;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .gs-filter-form-btn button {
-  padding: 7px 30px;
+  padding: 5px 26px;
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50px;
@@ -1508,7 +1559,7 @@ h2 {
   /*PAGING*/
 
 .gs-paging {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .gs-paging ul {
@@ -1519,12 +1570,11 @@ h2 {
 
 .gs-paging-item {
   display: inline-block;
-  margin-right: 5px;
   vertical-align: middle;
 }
 
 .gs-paging-item a {
-  padding: 3px 9px;
+  padding: 2px 8px;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
@@ -1550,7 +1600,8 @@ h2 {
   display: inline-block;
   width: 8px;
   height: 14px;
-  vertical-align: middle;
+  margin-top: 3px;
+  vertical-align: top;
   background: url("../img/paging-arrow.png") no-repeat;
 }
 
@@ -1569,7 +1620,7 @@ h2 {
 
 .gs-footer-socials {
   float: left;
-  width: 23.35%;
+  width: 31.1%;
   margin-right: 2.2%;
   padding: 36px 0;
 }
@@ -1578,7 +1629,7 @@ h2 {
   display: inline-block;
   width: 31px;
   height: 31px;
-  margin-right: 9px;
+  margin-right: 8px;
   vertical-align: top;
   text-indent: 100%;
   white-space: nowrap;
@@ -1618,9 +1669,9 @@ h2 {
 
 .gs-footermenu {
   float: left;
-  width: 46.7%;
+  width: 35%;
   margin-right: 2.2%;
-  padding: 36px 0;
+  padding: 30px 0;
 }
 
 .gs-footermenu ul {
@@ -1631,9 +1682,13 @@ h2 {
 .gs-footermenu-item {
   position: relative;
   display: inline-block;
-  width: 175px;
+  width: 141px;
   font-size: 13px;
   vertical-align: top;
+}
+
+.gs-footermenu-item:last-child {
+  width: 165px;
 }
 
 .gs-footermenu-item a {
@@ -1648,8 +1703,8 @@ h2 {
 .gs-footermenu-item:first-child:after {
   content: "";
   position: absolute;
-  left: -20px;
-  top: 5px;
+  left: -22px;
+  top: 6px;
   width: 15px;
   height: 13px;
   background: url("../img/sprite.png") no-repeat;
@@ -1660,15 +1715,15 @@ h2 {
 
 .gs-author {
   float: right;
-  padding-top: 20px;
-  width: 23.35%;
+  padding-top: 18px;
+  width: 16.6%;
 }
 
 .gs-author img {
   display: block;
   width: 108px;
   height: 38px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .gs-author p {
@@ -1677,7 +1732,7 @@ h2 {
   color: #fefefe;
 }
 
-.gs-author p>a {
+.gs-author .gs-white-link {
   position: relative;
   font-weight: 400;
   font-size: 12px;
@@ -1814,19 +1869,25 @@ input[name="feedback-email"].filled + label[for="feedback-email"] {
 
 @media (min-width: 900px) {
   .gs-subscribe-content .gs-input {
-    width: 50%;
+    width: 60%;
+    height: 44px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: 1100px) {
   .gs-subscribe-content .gs-input {
-    width: 55%;
+    width: 70%;
+    height: 44px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: 1200px) {
   .gs-subscribe-content .gs-input {
-    width: 63%;
+    width: 72%;
+    height: 44px;
+    box-sizing: border-box;
   }
 }
 
