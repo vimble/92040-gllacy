@@ -121,6 +121,7 @@ h2 {
 }
 
 .gs-textarea {
+  width: 445px;
   resize: none;
 }
 
