@@ -748,12 +748,13 @@ h2 {
 .gs-slider-cta {
   position: absolute;
   left: 50%;
-  bottom: 57px;
+  bottom: 60px;
   z-index: 40;
-  padding: 20px 44px;
-  margin-left: -140px;
-  font-size: 30.77px;
+  padding: 10px 42px;
+  margin-left: -142px;
+  font-size: 32px;
   font-weight: 700;
+  line-height: 44px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
@@ -835,16 +836,20 @@ h2 {
 }
 
 .gs-banner-item p {
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 2px;
+  margin-bottom: 56px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 52px;
 }
 
 .gs-banner-cta {
   text-align: right;
-  margin-bottom: 12px
+  margin-bottom: 12px;
 }
 
 .gs-banner-item:first-child {
@@ -869,7 +874,7 @@ h2 {
 }
 
 .gs-products {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .gs-products-item {
@@ -893,7 +898,7 @@ h2 {
   margin: 0;
 }
 
-.gs-products-item figure:before {
+.gs-products-main  figure:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1570,11 +1575,15 @@ input[type="checkbox"]:disabled + label:after {
 
 .gs-paging-item {
   display: inline-block;
+  width: 25px;
+  height: 25px;
   vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .gs-paging-item a {
-  padding: 2px 8px;
+  padding: 4px 10px;
+  margin-left: 2px;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
@@ -1584,6 +1593,8 @@ input[type="checkbox"]:disabled + label:after {
 
 .gs-paging-item.active a,
 .gs-paging-item.active:hover a {
+  width: 25px;
+  height: 25px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
@@ -1669,8 +1680,8 @@ input[type="checkbox"]:disabled + label:after {
 
 .gs-footermenu {
   float: left;
-  width: 35%;
-  margin-right: 2.2%;
+  width: 34%;
+  margin-right: 2.4%;
   padding: 30px 0;
 }
 
@@ -1715,7 +1726,7 @@ input[type="checkbox"]:disabled + label:after {
 
 .gs-author {
   float: right;
-  padding-top: 18px;
+  padding-top: 19px;
   width: 16.6%;
 }
 
@@ -1723,10 +1734,12 @@ input[type="checkbox"]:disabled + label:after {
   display: block;
   width: 108px;
   height: 38px;
+  margin-left: 2px;
   margin-bottom: 2px;
 }
 
 .gs-author p {
+  padding: 0;
   margin: 0;
   font-size: 12px;
   color: #fefefe;
